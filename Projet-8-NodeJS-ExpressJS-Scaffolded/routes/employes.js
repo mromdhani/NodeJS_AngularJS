@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-
 var employes =[
                 { nom: "Fahmi BEZZAOUIA", poste: "Formateur permanent", age: 40 },
                 { nom: "Sami AYADI", poste: "Formateur permanent", age: 40 },
