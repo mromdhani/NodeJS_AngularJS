@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./node_modules/angular/angular.js"></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Title</title>
+</head>
+<body ng-app="">
+
+    <div class="container">
+        <div class="page-header">
+            <h1> Exemple de formulaire</h1>
+        </div>
+        <form class="form-horizontal" name="form">
+            <div class="form-group">
+                <label for="inputNom" class="col-md-2 control-label">Nom</label>
+                <div class="col-md-5">
+                    <input type="text" class="form-control"
+                           id="inputNom"
+                           placeholder="Nom"
+                           name="nom"
+                           ng-model="nom"
+                           required
+                    >
+                </div>
+                <label class="col-md-5">
+                    <span class="text text-danger" ng-show="form.nom.$touched && form.nom.$invalid">
+                        Le nom est obligatoire !
+                    </span>
+
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="inputPrenom" class="col-md-2 control-label">Prenom</label>
+                <div class="col-md-5">
+                    <input type="text" class="form-control"
+                           id="inputPrenom" placeholder="Prenom"
+                           name="prenom"
+                           ng-model="prenom"
+                           required
+                    >
+                </div>
+                <label class="col-md-5">
+                    <span class="text text-danger" ng-show="form.prenom.$touched && form.prenom.$invalid">
+                        Le prenom est obligatoire !
+                    </span>
+
+                </label>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <button type="submit" class="btn btn-primary">S'inscrire</button>
+                </div>
+            </div>
+        </form>
+        <p > Etat de validation du nom <span class="text text-danger">{{form.nom.$valid}}</span> </p>
+        <p > Etat de validation du prenom <span class="text text-danger">{{form.prenom.$valid}}</span> </p>
+
+
+
+
+
+</div>
+
+
+
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/js/bootstrap.js"></script>
+
+</body>
+</html>
+

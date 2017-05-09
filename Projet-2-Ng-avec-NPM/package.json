@@ -1,0 +1,17 @@
+{
+  "name": "projet-2-ng-avec-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "bootstrap": "^3.3.7",
+    "jquery": "^1.12.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "M. Romdhani",
+  "license": "ISC"
+}
