@@ -7,6 +7,7 @@ var employes =[
                 { nom: "Sami AYADI", poste: "Formateur permanent", age: 40 },
                 { nom: "Brahim OUESLATI", poste: "Formateur permanent", age: 30 },
                 { nom: "Hanen OUESLATI", poste: "Formateur permanent", age: 18 },
+   { nom: "Mohamed ROMDHANI", poste: "Formateur permanent", age: 45 },
             ];
 
 /* Retourner la liste des employés en JSON */
